@@ -1,6 +1,6 @@
 departments as d
 ---
-id PK VARCHAR
+id PK INT
 dept_name VARCHAR
 
 

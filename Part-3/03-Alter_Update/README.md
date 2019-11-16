@@ -5,6 +5,16 @@
 
 * Explain the difference between `alter` and `update` in SQL statements.
 
+Answer:
+
+Found this really good description of the differences.  
+
+ALTER is a DDL (Data Definition Language) statement,  
+used to update the structure of the table (add/remove field/index etc).
+Whereas UPDATE is a DML (Data Manipulation Language) statement,  
+used to update the data in a table.  
+
+
 ### Part 2
 
 * You are given the following table:
