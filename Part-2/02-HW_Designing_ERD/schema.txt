@@ -1,17 +1,45 @@
--- Use the following starter code to begin creating a conceptual ERD --
+trainers as t
+---
+emp_no PK INT
+birth_date DATE
+first_name VARCHAR
+last_name VARCHAR
+gender VARCHAR
+hire_date DATE
+gym_no INT FK >- g.gym_no
 
-Trainers
--
--- Input attributes here --
+members as m
+---
+member_no PK INT
+birth_date DATE
+first_name VARCHAR
+last_name VARCHAR
+gender VARCHAR
+start_date DATE
+end_date DATE
+trainer_no INT FK >- t.emp_no
+gym_no INT FK >- g.gym_no
+credit_card FLOAT8
 
-Members
--
--- Input attributes here --
+gym as g
+---
+gym_no PK INT
+gym_name VARCHAR
+gym_address VARCHAR
+gym_city VARCHAR
+gym_state VARCHAR
 
-Gym
--
--- Input attributes here --
+equipment as e
+---
+equipment_no PK INT
+gym_no INT FK - g.gym_no
+equipment_type VARCHAR
+equipment_name VARCHAR
 
-Payments
--
--- Input attributes here --
+payments as p
+---
+payment_no PK INT
+payment_amount MONEY
+payment_date DATE
+member_no INT FK >- m.member_no
+cc_num FLOAT8 FK >- m.credit_card
