@@ -1,0 +1,12 @@
+departments as d
+---
+id PK VARCHAR
+dept_name VARCHAR
+
+
+employees as e
+----
+employee_id PK INT
+first_name VARCHAR
+last_name VARCHAR
+department_id INT FK >- d.id
