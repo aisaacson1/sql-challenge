@@ -36,18 +36,18 @@
 
 ANSWER: It will match each item from table_one to table_two resulting in 12 rows.
 
-Table_one, Table_two;
-1,10;
-1,11;
-1,12;
-2,10;
-2,11;
-2,12;
-3,10;
-3,11;
-3,12;
-4,10;
-4,11;
-4,12
+Table_one, Table_two;  
+1,10;  
+1,11;  
+1,12;  
+2,10;  
+2,11;  
+2,12;  
+3,10;  
+3,11;  
+3,12;  
+4,10;  
+4,11;  
+4,12  
 
 * _You can use pgAdmin and create a new table to test out this activity_
